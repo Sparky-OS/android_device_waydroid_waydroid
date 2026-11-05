@@ -246,3 +246,8 @@ endif
 # Updater
 PRODUCT_PACKAGES += \
     WaydroidUpdater
+
+# Legacy LG input API. Optical barriers are compositor output capabilities.
+PRODUCT_PACKAGES += com.lge.real3d
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/stereo/com.lge.real3d.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.lge.real3d.xml

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<permissions>
+    <library name="com.lge.real3d" file="/system/framework/com.lge.real3d.jar" />
+    <feature name="com.lge.real3d.hrz" />
+</permissions>
