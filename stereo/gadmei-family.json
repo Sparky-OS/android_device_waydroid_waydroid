@@ -1,11 +1,38 @@
 {
   "profile": "gadmei-t863-airtab-p81",
-  "identified_variants": ["Gadmei T863 f11ref", "AirTab P81 f11ref4329 20120517", "AirTab P81 f11ref4329 20120813"],
+  "identified_variants": [
+    "Gadmei T863 f11ref",
+    "AirTab P81 f11ref4329 20120517",
+    "AirTab P81 f11ref4329 20120813"
+  ],
   "t883_identified": false,
-  "policy_author": "Opus, 2026-11-06",
   "owner": "foreground content task at the write",
-  "withdraw": ["off", "background", "exit"],
-  "endpoints": ["/sys/class/enable3d/enable-3d", "/sys/class/ppmgr/ppmgr_3d_mode", "/sys/class/twx3d/lense"],
-  "packing": {"257": "sbs-left", "513": "top-bottom-left", "1281": "sbs-right", "1537": "top-bottom-right", "barrier 2 4": "columns-left", "barrier 1 without packing": "columns-left"},
-  "unsupported": ["automatic detection", "3D-to-2D extraction", "unlisted commands", "native syscalls bypassing Android Java I/O"]
+  "withdraw": [
+    "off",
+    "background",
+    "exit"
+  ],
+  "endpoints": [
+    "/sys/class/enable3d/enable-3d",
+    "/sys/class/ppmgr/ppmgr_3d_mode",
+    "/sys/class/twx3d/lense"
+  ],
+  "packing": {
+    "257": "sbs-left",
+    "513": "top-bottom-left",
+    "1281": "sbs-right",
+    "1537": "top-bottom-right",
+    "barrier 2 4": "columns-left",
+    "barrier 1 without packing": "columns-left"
+  },
+  "unsupported": [
+    "automatic detection",
+    "3D-to-2D extraction",
+    "unlisted commands",
+    "native syscalls bypassing Android Java I/O",
+    "unverified TextureView transforms",
+    "externally supplied TextureView consumers"
+  ],
+  "profile_switch": "persist.waydroid.gadmei_compat",
+  "requires_android_restart": true
 }
