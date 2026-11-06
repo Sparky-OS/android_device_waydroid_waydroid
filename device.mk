@@ -251,3 +251,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += com.lge.real3d
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/stereo/com.lge.real3d.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.lge.real3d.xml
+
+# Scoped Java endpoints for the identified Gadmei T863 / AirTab P81 family.
+PRODUCT_SYSTEM_PROPERTIES += persist.waydroid.gadmei_compat=true
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/stereo/gadmei-family.json:$(TARGET_COPY_OUT_SYSTEM)/etc/stereo/gadmei-family.json
