@@ -31,6 +31,7 @@
     "unlisted commands",
     "native syscalls bypassing Android Java I/O",
     "unverified TextureView transforms",
+    "windowless embedded surfaces without verified task ownership",
     "externally supplied TextureView consumers"
   ],
   "profile_switch": "persist.waydroid.gadmei_compat",
